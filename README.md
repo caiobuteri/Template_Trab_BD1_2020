@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 primeiro_componente_do_grupo:caiobuteri10@gmail.com
 
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+segundo_componente_do_grupo:joaovitordellpa@gmail.com
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
