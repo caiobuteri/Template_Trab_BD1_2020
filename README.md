@@ -11,10 +11,10 @@ segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
 ...<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
+Este documento contém a especificação do projeto do banco de dados Carro Facíl 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+> Com o objetivo de facilitar a relação entre vendedores e compradores de automóveis novos, seminovos e usados, decidimos focar no desenvolvimento de um sistema de fácil utilização onde clientes interessados em comprar um novo veículo possam encontrar seus vendedores. O sistema Carro Fácil tem como objetivo gerenciar essa relação de venda, para isso o sistema deve ser capaz de armazenar informações sobre os veículos que serão vendidos, os compradores, vendedores e as empresas transportadoras parceiras. Além disso, o sistema deve ser capaz de gerar relatórios com essas informações como por exemplo: “Quais modelos foram mais vendidos?”, “Qual o valor médio de cada venda?”, “Quais os lugares onde mais carros foram comprados?”, etc.
  
 
 ### 3.MINI-MUNDO<br>
