@@ -26,7 +26,7 @@ Desejamos o desenvolvimento de um sistema de compra e venda de veículos, onde o
 
 
 Telas criadas: https://www.quant-ux.com/#/test.html?h=a2aa10anD2ug8zimyXpWlBV3ybNneHkECzFiUDS3ZZ38ZN4oit3TIeIadyoi&ln=en
-(Todas as telas tambem se encontram na pasta do git hub *TElAS 4.1* )
+(Todas as telas tambem se encontram na pasta do git hub *TELAS 4.1*, dentro da pasta images )
 
 
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
