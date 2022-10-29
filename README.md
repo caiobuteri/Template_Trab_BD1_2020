@@ -23,23 +23,25 @@ Desejamos o desenvolvimento de um sistema de compra e venda de veículos, onde o
 
 ### 4.PROTOTIPAÇÃO, PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+Telas criadas: https://www.quant-ux.com/#/test.html?h=a2aa10anD2ug8zimyXpWlBV3ybNneHkECzFiUDS3ZZ38ZN4oit3TIeIadyoi&ln=en
+(Todas as telas tambem se encontram na pasta do git hub *TElAS 4.1* )
+
+
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
+    a) Com os dados salvos em nosso banco de dados podemos responder perguntas como: Quais foram os veículos mais vendidos de uma determinada região, qual a faixa de kilometragem mais bucada pelos compradores, qual o ticket médio dos clientes, quais as datas em que mais ocorream vendas, quais cores de carro mais são vendidas, etc.
+    
+    
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
 
 O sistema poderá fornecer relatórios envolvendo dados dos clientes, carros a vendas, vendas feitas e transportadoras. Com ele será possível saber em quais meses têm mais vendas, quais clientes compram mais
 
-- Clientes que mais compraram
+- Modelos de veículo mais vendidos
 - Mês com mais vendas
-- Pior época do ano em questão de vendas
+- Ticket médio dos clientes
 - Qual estado mais vende carros
-- Modelos mais vendidos
+- Faixa de kilometragem mais procurada
  
 #### 4.3 TABELA DE DADOS DO SISTEMA:
     a) Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas/registros de dados.
