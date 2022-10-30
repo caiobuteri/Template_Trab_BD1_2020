@@ -82,8 +82,132 @@ O sistema poderá fornecer relatórios envolvendo dados dos clientes, carros a v
 
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+        CREATE TABLE Carro (
+    codigo INT PRIMARY KEY,
+    numero_chassi INT,
+    modelo CHAR,
+    km_rodados FLOAT,
+    cor CHAR,
+    preco FLOAT,
+    fk_Cliente_cpf_cnpj VARCHAR
+);
+
+CREATE TABLE Cliente (
+    cpf_cnpj VARCHAR PRIMARY KEY,
+    nome VARCHAR,
+    data_nascimento DATE,
+    fk_Endereco_codigo INT
+);
+
+CREATE TABLE Venda (
+    codigo INT PRIMARY KEY,
+    data DATE,
+    fk_Cliente_cpf_cnpj VARCHAR,
+    fk_Cliente_cpf_cnpj_ VARCHAR,
+    fk_Transportadora_codigo INT
+);
+
+CREATE TABLE Transportadora (
+    codigo INT PRIMARY KEY,
+    nome VARCHAR,
+    area_atuacao VARCHAR,
+    preco FLOAT
+);
+
+CREATE TABLE Endereco (
+    codigo INT PRIMARY KEY,
+    numero INT,
+    fk_Rua_codigo INT
+);
+
+CREATE TABLE Pais (
+    codigo CHAR PRIMARY KEY,
+    nome CHAR
+);
+
+CREATE TABLE Estado (
+    codigo INT PRIMARY KEY,
+    nome CHAR,
+    fk_Pais_codigo CHAR
+);
+
+CREATE TABLE Cidade (
+    codigo INT PRIMARY KEY,
+    nome CHAR,
+    fk_Estado_codigo INT
+);
+
+CREATE TABLE Bairro (
+    codigo INT PRIMARY KEY,
+    nome VARCHAR,
+    fk_Cidade_codigo INT
+);
+
+CREATE TABLE Rua (
+    nome CHAR,
+    codigo INT PRIMARY KEY,
+    fk_Bairro_codigo INT
+);
+
+CREATE TABLE Faz_parte (
+    fk_Carro_codigo INT,
+    fk_Venda_codigo INT
+);
+ 
+ALTER TABLE Carro ADD CONSTRAINT FK_Carro_2
+    FOREIGN KEY (fk_Cliente_cpf_cnpj)
+    REFERENCES Cliente (cpf_cnpj)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Cliente ADD CONSTRAINT FK_Cliente_2
+    FOREIGN KEY (fk_Endereco_codigo)
+    REFERENCES Endereco (codigo)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Venda ADD CONSTRAINT FK_Venda_2
+    FOREIGN KEY (fk_Cliente_cpf_cnpj)
+    REFERENCES Cliente (cpf_cnpj)
+    ON DELETE CASCADE;
+ // Tinha dado erro nessa parte
+ALTER TABLE Venda ADD CONSTRAINT FK_Venda_3
+    FOREIGN KEY (fk_Transportadora_codigo)
+    REFERENCES Transportadora (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Endereco ADD CONSTRAINT FK_Endereco_2
+    FOREIGN KEY (fk_Rua_codigo)
+    REFERENCES Rua (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Estado ADD CONSTRAINT FK_Estado_2
+    FOREIGN KEY (fk_Pais_codigo)
+    REFERENCES Pais (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Cidade ADD CONSTRAINT FK_Cidade_2
+    FOREIGN KEY (fk_Estado_codigo)
+    REFERENCES Estado (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Bairro ADD CONSTRAINT FK_Bairro_2
+    FOREIGN KEY (fk_Cidade_codigo)
+    REFERENCES Cidade (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Rua ADD CONSTRAINT FK_Rua_2
+    FOREIGN KEY (fk_Bairro_codigo)
+    REFERENCES Bairro (codigo)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE Faz_parte ADD CONSTRAINT FK_Faz_parte_1
+    FOREIGN KEY (fk_Carro_codigo)
+    REFERENCES Carro (codigo)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Faz_parte ADD CONSTRAINT FK_Faz_parte_2
+    FOREIGN KEY (fk_Venda_codigo)
+    REFERENCES Venda (codigo)
+    ON DELETE SET NULL;
         
        
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
