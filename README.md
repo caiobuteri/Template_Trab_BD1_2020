@@ -59,8 +59,6 @@ O sistema poderá fornecer relatórios envolvendo dados dos clientes, carros a v
         Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
 ![image](https://user-images.githubusercontent.com/54895327/198894304-0884e375-cac8-44b5-8a18-19f66c7cf83a.png)
         
     
