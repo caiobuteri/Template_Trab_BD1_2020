@@ -66,12 +66,44 @@ O sistema poderá fornecer relatórios envolvendo dados dos clientes, carros a v
     [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
-#### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
+#### 5.2 Descrição dos dados    
+    PAIS: Tabela que armazena as informações relativas ao País
+    NOME: campo que armazena o nome do país
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    ESTADO: Tabela que armazena as informações relativas ao estado
+    NOME: campo que armazena o nome do estado
+    
+    CIDADE: Tabela que armazena as informações relativas a Cidade
+    NOME: campo que armazena o nome da Cidade
+    
+    BAIRRO: Tabela que armazena as informações relativas ao Bairro
+    NOME: campo que armazena o nome do bairro
+    
+    RUA: Tabela que armazena as informações relativas a Rua
+    NOME: campo que armazena o nome da Rua
+    
+    ENDERECO: Tabela que armazena as informações relativas ao endereco do cliente
+    NUMERO: campo que armazena o Numero da residencia
+    
+    CLIENTE: Tabela que armazena as informações relativas ao cliente
+    CPF: campo que armazena o CPF do cliente
+    NOME: campo que armazena o nome do cliente
+    DATA_NASCIMENTO: campo que armazena a data de nascimento do cliente
+    
+    CARRO: Tabela que armazena as informações relativas ao carro
+    NUMERO_CHASSI: campo que armazena o documento de identidade do carro
+    MODELO: campo que armazena o modelo do carro
+    KM_RODADOS: campo que armazena o numero de km rodados do carro
+    COR: campo que armazena a cor do carro
+    PRECO: campo que armazena o PREÇO do carro
+    
+    PEDIDO: Tabela que armazena as informações relativas ao pedido de compra/venda
+    DATA: campo que armazena a data do pedido
+    
+    TRANSPORTADORA: Tabela que armazena as informações relativas a transportadora que vai entregar o carro
+    NOME: campo que armazena o nome da transportadora
+    AREA_ATUACAO: campo que armazena a area de atuacao da transportadora
+    PRECO: campo que armazena o preco da entrega pela transportadora
 
 
 ### 6	MODELO LÓGICO<br>
