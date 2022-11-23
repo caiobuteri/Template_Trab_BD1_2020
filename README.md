@@ -114,76 +114,77 @@ O sistema poderá fornecer relatórios envolvendo dados dos clientes, carros a v
 
 
 ### 7	MODELO FÍSICO<br>
-        CREATE TABLE Carro (
-    codigo INT PRIMARY KEY,
+CREATE TABLE Carro (
+    codigo SERIAL PRIMARY KEY,
     numero_chassi INT,
-    modelo CHAR,
+    modelo VARCHAR(50),
     km_rodados FLOAT,
-    cor CHAR,
+    cor VARCHAR(50),
     preco FLOAT,
-    fk_Cliente_cpf_cnpj VARCHAR
+    fk_Cliente_cpf_cnpj VARCHAR(50)
 );
 
 CREATE TABLE Cliente (
-    cpf_cnpj VARCHAR PRIMARY KEY,
-    nome VARCHAR,
+    codigo SERIAL PRIMARY KEY,
+    cpf_cnpj VARCHAR(50) PRIMARY KEY,
+    nome VARCHAR(50),
     data_nascimento DATE,
-    fk_Endereco_codigo INT
+    fk_Endereco_codigo SERIAL
 );
 
 CREATE TABLE Venda (
-    codigo INT PRIMARY KEY,
+    codigo SERIAL PRIMARY KEY,
     data DATE,
-    fk_Cliente_cpf_cnpj VARCHAR,
+    fk_Cliente_cpf_cnpj VARCHAR(50),
     fk_Cliente_cpf_cnpj_ VARCHAR,
-    fk_Transportadora_codigo INT
+    fk_Transportadora_codigo SERIAL
 );
 
 CREATE TABLE Transportadora (
-    codigo INT PRIMARY KEY,
-    nome VARCHAR,
-    area_atuacao VARCHAR,
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    area_atuacao VARCHAR(50),
     preco FLOAT
 );
 
 CREATE TABLE Endereco (
-    codigo INT PRIMARY KEY,
+    codigo SERIAL PRIMARY KEY,
     numero INT,
-    fk_Rua_codigo INT
+    fk_Rua_codigo SERIAL
 );
 
 CREATE TABLE Pais (
-    codigo CHAR PRIMARY KEY,
-    nome CHAR
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50)
 );
 
 CREATE TABLE Estado (
-    codigo INT PRIMARY KEY,
-    nome CHAR,
-    fk_Pais_codigo CHAR
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    fk_Pais_codigo SERIAL
 );
 
 CREATE TABLE Cidade (
-    codigo INT PRIMARY KEY,
-    nome CHAR,
-    fk_Estado_codigo INT
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    fk_Estado_codigo SERIAL
 );
 
 CREATE TABLE Bairro (
-    codigo INT PRIMARY KEY,
-    nome VARCHAR,
-    fk_Cidade_codigo INT
+    codigo SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    fk_Cidade_codigo SERIAL
 );
 
 CREATE TABLE Rua (
-    nome CHAR,
-    codigo INT PRIMARY KEY,
-    fk_Bairro_codigo INT
+    nome VARCHAR(50),
+    codigo SERIAL PRIMARY KEY,
+    fk_Bairro_codigo SERIAL
 );
 
 CREATE TABLE Faz_parte (
-    fk_Carro_codigo INT,
-    fk_Venda_codigo INT
+    fk_Carro_codigo SERIAL,
+    fk_Venda_codigo SERIAL
 );
  
 ALTER TABLE Carro ADD CONSTRAINT FK_Carro_2
@@ -197,14 +198,15 @@ ALTER TABLE Cliente ADD CONSTRAINT FK_Cliente_2
     ON DELETE RESTRICT;
  
 ALTER TABLE Venda ADD CONSTRAINT FK_Venda_2
-    FOREIGN KEY (fk_Cliente_cpf_cnpj)
-    REFERENCES Cliente (cpf_cnpj)
+    FOREIGN KEY (fk_Cliente_codigo)
+    REFERENCES Cliente (codigo)
     ON DELETE CASCADE;
- // Tinha dado erro nessa parte
+
 ALTER TABLE Venda ADD CONSTRAINT FK_Venda_3
     FOREIGN KEY (fk_Transportadora_codigo)
     REFERENCES Transportadora (codigo)
     ON DELETE CASCADE;
+
  
 ALTER TABLE Endereco ADD CONSTRAINT FK_Endereco_2
     FOREIGN KEY (fk_Rua_codigo)
