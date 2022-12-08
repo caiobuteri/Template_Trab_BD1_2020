@@ -374,7 +374,10 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 ![](images/select_1_1.png)
-
+![](images/select_1_2.png)
+![](images/select_1_3.png)
+![](images/select_1_4.png)
+![](images/select_1_5.png)
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
