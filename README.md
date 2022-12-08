@@ -303,6 +303,7 @@ VALUES (1, 10, 1),
         (8, 11, 1),
         (9, 21, 2),
         (10, 22, 2);
+
 INSERT INTO cliente (cpf_cnpj, nome, data_nascimento, fk_endereco_codigo)
 VALUES  (1111,'Jose Rodrigues','1980-01-19',1),
 (2222,'Lais Moura','1980-12-07',2),
@@ -320,6 +321,7 @@ VALUES  (1111,'Jose Rodrigues','1980-01-19',1),
          (1414,'Ingrid Motta','1997-11-12',4),
          (1515,'Gilberto Silva','2001-12-05',1),
          (1616,'Lucas Lopez','2003-11-17',1);
+
 INSERT INTO carro (codigo, numero_chassi, modelo, km_rodados, cor, preco, fk_cliente_cpf_cnpj)
 VALUES  (1, 001, 'Toyota Hilux', 14600,'Azul',220000, 1111),
 		(2, 002, 'Bugre Buggy', 17125,'Preto',45000, 2222),
@@ -336,6 +338,7 @@ VALUES  (1, 001, 'Toyota Hilux', 14600,'Azul',220000, 1111),
         (13, 013, 'Toyota Corolla', 9000,'Prata',145000, 1313),
         (14, 014, 'Subaru Impreza', 14000,'Cobre',117000, 1414),
         (15, 015, 'Mazda 929 V6 Aut', 12300,'Verde',15000, 7777);
+
 INSERT INTO transportadora (codigo, nome, area_atuacao, preco)
 VALUES  (1,'Transporta BR','Brasil',3000),
 		(2,'ARG Tr','Argentina',4000),
@@ -343,6 +346,7 @@ VALUES  (1,'Transporta BR','Brasil',3000),
         (4,'Ultra','Uruguai',4000),
         (5,'Delta','America do Sul',6000),
         (6,'Omega','Mundo',8000);
+
 INSERT INTO venda (codigo, data, fk_cliente_cpf_cnpj, fk_cliente_cpf_cnpj, fk_transportadora_codigo, fk_carro_codigo)
 VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 		(2,'2022-02-10',2222, 3333, 3, 2),
