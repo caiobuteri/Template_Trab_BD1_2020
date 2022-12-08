@@ -250,6 +250,111 @@ ALTER TABLE Faz_parte ADD CONSTRAINT FK_Faz_parte_2
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
+-- Inserir paises
+INSERT into pais (codigo, nome)
+VALUES (1,'Brasil'),
+       (2,'Argentina'),
+       (3,'Paraguai'),
+       (4,'Uruguai');
+-- Inserir Estados
+INSERT into estado(codigo, nome, fk_pais_codigo)
+VALUES (1, 'Espirito Santo', 1),
+        (2, 'Sao Paulo',1),
+        (3, 'Pará',1),
+        (4, 'Buenos Aires',2),
+        (5, 'Assunção',3),
+        (6, 'Montevideu',4); 
+-- Inserir cidades
+INSERT into cidade(codigo, nome, fk_estado_codigo)
+VALUES (1, 'Vitoria', 1),
+        (2, 'Sao Paulo',2),
+        (3, 'Belém',3),
+        (4, 'Buenos Aires',4),
+        (5, 'Assunção',5),
+        (6, 'Montevideu',6); 
+--Inserir bairros
+INSERT into bairro(codigo, nome, fk_cidade_codigo)
+VALUES (1, 'Goiabeiras', 1),
+        (2, 'Mooca',2),
+        (3, 'Ipiranga', 2),
+        (4, 'Baia do Sol',3),
+        (5, 'San Telmo',4),
+        (6, 'San Pablo',5),
+        (7, 'Boceo',6); 
+
+-- Inserir ruas
+INSERT into rua(codigo, nome, fk_bairro_codigo)
+VALUES (1, 'Rua Silvana Rosa', 1),
+        (2, 'Rua Camé',2),
+        (3, 'Rua Imbuial', 3),
+        (4, 'Rua Clovis',4),
+        (5, 'Cocha Bamba',5),
+        (6, 'Dolores Vera',6),
+        (7, 'Pinzón',7); 
+--Inserir endereço
+INSERT into endereco(codigo, nome, fk_rua_codigo)
+VALUES (1, 10, 1),
+        (2, 20,2),
+        (3, 30, 3),
+        (4, 40 ,4),
+        (5, 50 ,5),
+        (6, 60 ,6),
+        (7, 70,7),
+        (8, 11, 1),
+        (9, 21, 2),
+        (10, 22, 2);
+INSERT INTO cliente (cpf_cnpj, nome, data_nascimento, fk_endereco_codigo)
+VALUES  (1111,'Jose Rodrigues','1980-01-19',1),
+(2222,'Lais Moura','1980-12-07',2),
+         (3333,'Joao Gabriel Caldeira','1982-03-11',3),
+         (4444,'Isabel Rodrigues','1982-10-17',4),
+         (5555,'Theo da Cruz','1983-06-11',5),
+         (6666,'Julia da Rocha','1984-02-26',6),
+         (7777,'Marcelo Ferreira','1986-01-06',7),
+         (8888,'Arthur Sales','1988-04-07',8),
+         (9999,'Breno Fogaça','1988-11-24',9),
+         (1010,'Hugo Mendes','1991-05-30',1),
+         (1100,'Kim Ito','1992-01-08',1),
+         (1212,'Theo Peres','1995-12-25',2),
+         (1313,'Caio Justa','1996-11-07',3),
+         (1414,'Ingrid Motta','1997-11-12',4),
+         (1515,'Gilberto Silva','2001-12-05',1),
+         (1616,'Lucas Lopez','2003-11-17',1);
+INSERT INTO carro (codigo, numero_chassi, modelo, km_rodados, cor, preco, fk_cliente_cpf_cnpj)
+VALUES  (1, 001, 'Toyota Hilux', 14600,'Azul',220000, 1111),
+		(2, 002, 'Bugre Buggy', 17125,'Preto',45000, 2222),
+        (3, 003, 'Mahindra PickUp', 22950,'Preto',46000, 3333),
+        (4, 004, 'Mercedes Benz 300-D', 12100,'Preto',20000, 4444),
+        (5, 005, 'Lexus RX 300', 14145,'Prata',180000, 5555),
+        (6, 006, 'Suzuki Jimny Wide', 17700,'Preto',115000, 6666),
+        (7, 007, 'Ford Taurus', 22000,'Branco',27000, 7777),
+        (8, 008, 'Saab 9000', 5600,'Vermelho',13000, 8888),
+        (9, 009, 'Mercury Mystique', 12800,'Cinza',29000, 8888),
+        (10, 010, 'Jeep Wrangler Sport', 19500,'Prata',320000, 8888),
+        (11, 011, 'Lotus Espirit', 12200,'Preto',160000, 1212),
+        (12, 012, 'Lexus ES-350', 19900,'Branco',135000, 1212),
+        (13, 013, 'Toyota Corolla', 9000,'Prata',145000, 1313),
+        (14, 014, 'Subaru Impreza', 14000,'Cobre',117000, 1414),
+        (15, 015, 'Mazda 929 V6 Aut', 12300,'Verde',15000, 7777);
+INSERT INTO transportadora (codigo, nome, area_atuacao, preco)
+VALUES  (1,'Transporta BR','Brasil',3000),
+		(2,'ARG Tr','Argentina',4000),
+        (3,'Fast','Paraguai',4000),
+        (4,'Ultra','Uruguai',4000),
+        (5,'Delta','America do Sul',6000),
+        (6,'Omega','Mundo',8000);
+INSERT INTO venda (codigo, data, fk_cliente_cpf_cnpj, fk_cliente_cpf_cnpj, fk_transportadora_codigo, fk_carro_codigo)
+VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
+		(2,'2022-02-10',2222, 3333, 3, 2),
+        (3,'2022-03-11',3333, 4444, 6, 3),
+        (4,'2022-05-01',4444, 5555, 5, 4),
+        (5,'2022-07-02',5555, 6666, 5, 5),
+        (6,'2022-09-19',6666, 7777, 2, 6),
+        (7,'2022-09-20',7777, 8888, 4, 7),
+        (8,'2022-09-25',8888, 9999, 5, 8),
+        (9,'2022-10-09',1212, 1111, 5, 11),
+        (10,'2022-12-25',1212, 8888, 5,13);
+
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
