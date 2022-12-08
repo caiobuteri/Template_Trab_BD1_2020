@@ -382,6 +382,13 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
+    
+![](images/select_2_1.png)
+![](images/select_2_2.png)
+![](images/select_2_3.png)
+![](images/select_2_4.png)
+![](images/select_2_5.png)
+
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
