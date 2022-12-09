@@ -374,15 +374,25 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
 ![](images/select_1_1.png)
+
 ![](images/select_1_2.png)
+
 ![](images/select_1_3.png)
+
 ![](images/select_1_4.png)
+
 ![](images/select_1_5.png)
+
 ![](images/select_1_6.png)
+
 ![](images/select_1_7.png)
+
 ![](images/select_1_8.png)
+
 ![](images/select_1_9.png)
+
 ![](images/select_1_10.png)
+
 ![](images/select_1_11.png)
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
@@ -390,20 +400,41 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
     b) Criar uma consulta para cada tipo de função data apresentada.
     
 ![](images/select_2_1.png)
+
 ![](images/select_2_2.png)
+
 ![](images/select_2_3.png)
+
 ![](images/select_2_4.png)
+
 ![](images/select_2_5.png)
+
 ![](images/select_2_6.png)
+
 ![](images/select_2_7.png)
+
 ![](images/select_2_8.png)
+
 ![](images/select_2_9.png)
+
 ![](images/select_2_10.png)
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
+
+![](images/delete_1.png)
+
+![](images/delete_2.png)
+
+![](images/delete_3.png)
+
+![](images/update_1.png)
+
+![](images/update_2.png)
+
+![](images/update_3.png)
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
