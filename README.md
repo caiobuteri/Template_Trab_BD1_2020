@@ -394,6 +394,11 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 ![](images/select_2_3.png)
 ![](images/select_2_4.png)
 ![](images/select_2_5.png)
+![](images/select_2_6.png)
+![](images/select_2_7.png)
+![](images/select_2_8.png)
+![](images/select_2_9.png)
+![](images/select_2_10.png)
 
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
