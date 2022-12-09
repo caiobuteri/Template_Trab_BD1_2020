@@ -472,6 +472,12 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 
 ![](images/select_5_1.png)
 
+![](images/select_LJOIN.png)
+
+![](images/select_RJOIN.png)
+
+![](images/select_LJOIN2.png)
+
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
