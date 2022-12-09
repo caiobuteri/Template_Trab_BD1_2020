@@ -496,6 +496,17 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
 
+![](images/subq_1.png)
+
+![](images/subq_2.png)
+
+![](images/subq_3.png)
+
+![](images/subq_4.png)
+
+![](images/subq_5.png)
+
+
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS
