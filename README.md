@@ -439,8 +439,19 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-    
+
+![](images/all_tables.png)
+
 ![](images/select_4_1.png)
+
+![](images/select_imp_2.png)
+
+![](images/select_imp_3.png)
+
+![](images/select_imp_4.png)
+
+![](images/select_imp_5.png)
+
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
