@@ -484,6 +484,14 @@ VALUES  (1,'2022-01-20',1111, 2222, 1, 1),
 
 ![](images/select_6_1.png)
 
+![](images/view_1.png)
+
+![](images/view_2.png)
+
+![](images/view_3.png)
+
+![](images/view_4.png)
+
 #### 9.10	SUBCONSULTAS (Mínimo 4)<br>
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
